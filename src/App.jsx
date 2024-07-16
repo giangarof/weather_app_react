@@ -17,7 +17,7 @@ function App() {
       setErr(false)
       
       try {
-        const url = `http://api.weatherapi.com/v1/current.json?key=${access_key}&q=${term}`
+        const url = `https://api.weatherapi.com/v1/current.json?key=${access_key}&q=${term}`
         const res = await fetch(url)
         const data = await res.json()
         console.log(data)
